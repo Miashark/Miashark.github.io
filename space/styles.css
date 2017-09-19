@@ -1,0 +1,260 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #000;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+}
+nav>a, nav>a:visited { /* порядок правил для ссылок имеет значение */
+	color: #e6618c;
+	text-decoration: underline;
+}
+nav>a:hover {
+	color: white;
+	line-height: 0.1em;
+	transition: 0.5s; 
+	text-decoration: none;
+
+}
+.a1:hover {
+	line-height: 1em;
+	transition: 0.5s;
+
+}
+.a2:hover {
+	line-height: 1em;
+	transition: 0.5s;
+}
+.a3:hover {
+	line-height: 1em;
+	transition: 0.5s;
+}
+nav>a:focus, nav>a:active {
+	color: #c83867;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+header {
+	background: url("stars2.jpg") center center no-repeat;
+	padding: 20px 20px 100px 20px;
+	background-color: black;
+	background-size: cover;
+	height: 650px;
+}
+
+
+nav>a {
+	color: #00f6ff;
+	float: right;
+	padding-right: 50px;
+	margin-top: 20px;
+	text-decoration: none;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	display: inline-block;
+}
+
+nav>a:not(:hover) {
+	color: #00f6ff;
+	transition: 0.5s;
+}
+.input {
+ 	margin: 150px 520px 50px 630px;
+ 	background-color: rgba(0, 0, 0, 0);
+ 	border: 1px solid #00f6ff;
+ 	border-radius: 10px;
+ 	color: #00f6ff;
+ 	padding: 7px 70px;
+ 	font-family: 'Encode Sans Condensed', sans-serif;
+ 	font-weight: 300;
+ 	width: 120px;
+}
+.input:hover {
+	background-color: rgba(0, 246, 255, 0.2);
+	transition: 0.5s;
+	color: #fff;
+	cursor: pointer;
+	
+}
+.input:not(:hover) {
+	transition: 0.5s;
+}
+div>a {
+	color: #00f6ff;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.logo {
+	height: 100px;
+	margin-left: 20px;
+	opacity: 0.3;
+	transition: 4s;
+  
+}
+
+.logo:hover{
+	cursor: pointer;
+	opacity: 1;
+	transition: 3s;
+}
+ .sec1 {
+ 	background-color: black;
+ 	height: 850px;
+ }
+ .s1h1 {
+ 	color: #00f6ff;
+ 	text-align: center;
+ 	padding-top: 50px;
+ 	font-family: 'Encode Sans Condensed', sans-serif;
+ 	font-weight: 400;
+ 	font-size: 2em;
+ 	letter-spacing: 0.5em;
+ }
+ div {
+ 	width: 900px;
+ 	margin: 0 auto;
+ }
+p {
+	color: grey;
+	text-align: center;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	padding-top: 30px;
+	line-height: 1.5em;
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+.generalheader>h1 {
+	text-align: center;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	color: #fff;
+	font-size: 5em;
+	font-weight: 200; 
+	margin-top: 120px;
+	-moz-user-select: none;
+	user-select: none;
+	cursor: default;
+	transition: 1s;
+}
+.generalheader>h1:hover {
+	text-shadow: 0 0 10px #fff;
+	transition: 0.5s;
+}
+
+
+.blueberry { margin: 0 auto; }
+.blueberry .slides {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.blueberry .slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.blueberry .slides li img {
+	display: block;
+	width: 80%;
+	max-width: none;
+	margin: 0 auto;
+}
+.blueberry .slides li.active { display: block; position: relative; }
+.blueberry .crop li img { width: auto; }
+
+.blueberry .pager {
+	visibility: hidden;
+	height: 40px;
+	text-align: center;
+}
+.h1p {
+	color: #b9b9b9; 
+}
+
+.sec2 {
+ 	background-color: black;
+ 	height: 750px;
+ }
+ hr {
+ 	margin: 0 120px 0 120px;
+ 	color: #00f6ff;
+ 	height: 1px;
+ 	background-color: #00f6ff;
+ 	border: none;;
+ }
+
+.sec3 {
+	background-color: black;
+ 	height: 800px;
+}
+.logobot {
+	margin: 50px auto 50px 700px;
+}
+
+.logobot:not(:hover) {
+	-webkit-animation: rainbow 5s 5 linear;}
+@-webkit-keyframes rainbow {
+0% {opacity: 0.2;}
+50% {opacity: 1;}
+100% {opacity: 0.2;}
+}

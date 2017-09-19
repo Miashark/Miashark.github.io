@@ -1,0 +1,150 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #000;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+
+}
+a:hover {
+	color: #fdf208;
+	text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+header {
+	background: url("bg.jpg") center center no-repeat;
+	background-size: cover;
+	height: 791px;
+	opacity: 0.8;
+}
+
+div {
+	text-align: center;
+}
+.button {
+	background-color: rgba(248, 248, 255, 0.4);
+ 	border: 1px solid #00f6ff;
+ 	border-radius: 10px;
+ 	color: #00f6ff;
+ 	padding: 7px 20px;
+ 	font-family: 'Encode Sans Condensed', sans-serif;
+ 	font-weight: 300;
+ 	width: 200px;
+ 	margin: 20px 680px;
+}
+.site {
+	text-decoration: none;
+	font-family: 'Cairo', sans-serif;
+	font-weight: 700;
+	font-size: 1.1em;
+	color: deepskyblue;
+}
+.button:hover {
+	margin-left: 750px;
+	background-color: rgba(248, 248, 255, 0.8);
+	transition: 0.5s; 
+}
+.button:not(:hover) {
+	transition: 0.5s; 
+}
+.button:hover>a {
+	color: #DA70D6;
+}
+div>img {
+	margin-top: 100px;
+}
+p {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 1em; 
+	cursor: default;
+	padding: 20px 30px auto auto;
+	text-align: right;
+}
+#heart {
+	text-align: right;
+	margin: 20px 30px auto auto;
+	color: #DC143C;
+	text-decoration: none;
+}
+#heart:hover {
+	text-shadow: 0 0 10px red;
+	transition: 0.5s;
+}
+
+#heart:not(hover) {
+	transition: 0.5s;
+}
