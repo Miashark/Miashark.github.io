@@ -148,3 +148,11 @@ p {
 #heart:not(hover) {
 	transition: 0.5s;
 }
+@media screen and (max-width: 1500px) {
+ 	.button {
+ 		margin: 20px auto;
+ 	}
+ 	.button:hover {
+ 		margin: 20px auto;
+ 	}
+ 	}
